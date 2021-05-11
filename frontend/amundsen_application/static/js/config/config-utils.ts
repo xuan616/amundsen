@@ -365,5 +365,5 @@ export function getColumnLineageLink(
  * Returns whether table data quality checks are enabled
  */
 export function isTableQualityCheckEnabled() {
-  return AppConfig.tableQualityCheck.isEnabled;
+  return AppConfig.tableQualityChecks.isEnabled;
 }
