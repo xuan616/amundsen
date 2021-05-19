@@ -231,7 +231,7 @@ export function getTableQualityChecks(key: string) {
     method: 'GET',
   })
     .then((response: AxiosResponse<TableQualityChecksAPI>) => ({
-      checks: response.data,
+      checks: response.data.checks,
       status: response.status,
     }))
     .catch((e: AxiosError<TableQualityChecksAPI>) => {
