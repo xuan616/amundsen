@@ -1010,7 +1010,7 @@ class AtlasProxy(BaseProxy):
 
         resources: List[Union[PopularTable, DashboardSummary]] = []
 
-        for record in search_results.entities:
+        for record in search_results.entities or []:
             if resource_type == ResourceType.Table.name:
                 table_info = self._extract_info_from_uri(table_uri=record.attributes[CommonParams.uri])
                 res = self._parse_bookmark_qn(record.attributes[CommonParams.qn])
