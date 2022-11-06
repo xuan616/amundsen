@@ -22,9 +22,7 @@ with open(requirements_path) as requirements_file:
 oidc = ['flaskoidc>=1.0.0']
 atlas = ['apache-atlas==0.0.11']
 rds = ['amundsen-rds==0.0.6',
-       'mysqlclient>=1.3.6,<3',
-       'sqlalchemy>=1.3.6,<1.4',
-       'alembic>=1.2,<2.0']
+       'mysqlclient>=1.3.6,<3']
 gremlin = [
     'amundsen-gremlin>=0.0.9',
     'gremlinpython==3.4.3',
